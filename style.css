@@ -1,76 +1,105 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
-.main{
-    width: 100%;
-    background: url(pc/bg.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-    position: relative;
-    font-family: sans-serif;
-}
-
-.navbar{
-    width: 86%;
-    display: flex;
-    margin: auto;
-    padding: 15px 0;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
-
-
-ul{
-    margin-top: 1%;
-    margin-left: 55%;
-
-}
-
-ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 10px 16px;
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
     
-
-}
-
-ul li a{
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(to right, #b8a9b3, #965492);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        color: #333;
+    }
     
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    color: darkslategray;
-    margin-top: -3%;
-
-
-
-}
-
-
-.info{
-    margin-left: 7%;
-    margin-top: 6%;
-}
-
-.info h2{
-    font-size: 65px;
-    color: rgb(36,32,30);
-}
-
-.info h3{
-    font-size: 18px;
-    letter-spacing: 1px;
-    line-height: 24px;
-}
-
-.info span{
-    color: rgb(230,104,59);
-}
+    .container {
+        padding: 20px;
+    }
+    
+    .profile-card {
+        background: #e9deded3;
+        max-width: 520px;
+        padding: 2.5rem 2rem;
+        border-radius: 16px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s;
+    }
+    
+    .profile-card:hover {
+        transform: scale(1.02);
+    }
+    
+    .profile-img {
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+        object-fit: cover;
+        border: 5px solid #eee7ee;
+        margin-bottom: 2rem;
+        transform: rotate(38deg);
+    }
+    
+    .role {
+        font-weight: 600;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        color: #555;
+    }
+    
+    .bio {
+        font-size: 0.95rem;
+        margin: 1rem 0;
+        color: #444;
+    }
+    
+    .info p {
+        margin: 0.3rem 0;
+        font-size: 0.9rem;
+    }
+    
+    .email-btn {
+        padding: 0.5rem 1rem;
+        color: rgb(53, 35, 51);
+        text-decoration: none;
+        border-radius: 8px;
+    }
+    
+    .email-btn:hover {
+        color: #872d63;
+    }
+    
+    .github-btn {
+        display: inline-block;
+        margin-top: 1.5rem;
+        padding: 0.6rem 1.2rem;
+        background: #965492;
+        color: white;
+        text-decoration: none;
+        border-radius: 30px;
+        font-weight: bold;
+        transition: background 0.3s;
+    }
+    
+    .github-btn:hover {
+        background: #27021f;
+    }
+    /* Responsive */
+    
+    @media (max-width: 480px) {
+        .profile-card {
+            padding: 1.5rem 1rem;
+        }
+        .bio {
+            font-size: 0.9rem;
+        }
+        .github-btn {
+            width: 100%;
+            display: block;
+        }
+    }
 
 
 
